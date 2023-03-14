@@ -1,11 +1,9 @@
 FROM eclipse-temurin:17-alpine
 LABEL maintainer="item645"
 COPY bottom-feeder-0.0.1.jar bottom-feeder-0.0.1.jar
-EXPOSE 8080
 ENTRYPOINT [ \
 "java", \
 "-Xmx500m", \
-"-Dserver.port=$PORT", \
 "-jar", \
 "bottom-feeder-0.0.1.jar", \
 "--spring.profiles.active=prod", \
