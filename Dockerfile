@@ -11,5 +11,6 @@ ENTRYPOINT [ \
 "--spring.profiles.active=prod", \
 "--spring.datasource.url=jdbc:h2:file:/data/bottomfeeder", \
 "--spring.datasource.driver-class-name=org.h2.Driver", \
-"--spring.jpa.hibernate.ddl-auto=update" \
+"--spring.jpa.hibernate.ddl-auto=update", \
+"--bf.application.url=https://bottom-feeder.onrender.com" \
 ]
